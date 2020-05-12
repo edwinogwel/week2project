@@ -14,7 +14,7 @@ Incase of any issues contact us at:
 * EMAIL: troubleshooting@codexstudio.com
 
 ## Link to live site on GitHub Pages
-* https://edwinogwel.github.io/
+* https://edwinogwel.github.io/week2project
 
 ### License
 **MIT**
