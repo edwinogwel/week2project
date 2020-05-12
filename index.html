@@ -2,77 +2,92 @@
 <html>
 
 <head>
+
     <title>Week 2 Project</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src = "js/scripts.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <div class="jumbotron">
-            <h1>About</h1>
-            <p>This is an application that prompts you to enter your birthday and depending on your gender outputs your
-                Akan Name. Derived from the Ghanian culture, children are frequently given their first name
-                corresponding
-                to the day of the week they were born. Be the first to find out your Akan name now! All you need
-                to do is fill in the form below with your birthday and click on the submit button and immediately get
-                your Akan name!</p>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <h2>Steps To Follow</h2>
-                <ul>
-                    <li>Fill in the form below with valid info asked</li>
-                    <li>Click on the submit button below</li>
-                    <li>Sit back...</li>
-                </ul>
+        <div class="row">
+            <div class="col-md-6">
                 <div class="jumbotron">
-                    <form action>
-                        <label for="name">Name:</label>
-                        <br>
-                        <input type="text" placeholder="Enter your name">
-                        <br>
-                        <br>
-                        <label for="email">Email:</label>
-                        <br>
-
-                        <input type="email" placeholder="Enter your email">
-                        <br>
-                        <br>
-                        <label for="message">Birthday:</label>
-
-                        <br>
-                        <input type="text" placeholder="Enter your birthday">
-                        <br>
-                        <br>
-                        <button id="birthday" class="bg-success">Submit</button>
-
-                    </form>
+                    <h1>About</h1>
+                    <p>This is an application that prompts you to enter your birthday and depending on your gender
+                        outputs your
+                        Akan Name. Derived from the Ghanian culture, children are frequently given their first name
+                        corresponding
+                        to the day of the week they were born. Be the first to find out your Akan name now! All you need
+                        to do is fill in the form below with your birthday and click on the submit button and
+                        immediately get
+                        your Akan name!</p>
                 </div>
             </div>
-            <div class="card bg-primary text-white">
-                <div class="card-title">
 
-                    <h2>Et Consequat Magna</h2>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Steps To Follow</h2>
+                        <ul>
+                            <li>Fill in the form below with valid info asked</li>
+                            <li>Click on the submit button below</li>
+                            <li>Sit back...</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="card-body">
-
-
-                <ul>
-                    <li>Orci ut velit</li>
-                    <li>Pellentesque cursus justo</li>
-                    <li>In felis condimentum cursus</li>
-                </ul>
-                <ul>
-                    <li>Proin dignissim lectus enim</li>
-                    <li>Eu bibendum mauris euismod in</li>
-                    <li>Morbi dictum</li>
-                    <li>Ex et malesuada pellentesque</li>
-                </ul>
-
-
             </div>
         </div>
+        <div class="jumbotron">
+            <form action name="myform">
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" placeholder="Enter your name">
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <br>
+
+                <input type="email" placeholder="Enter your email">
+                <br>
+                <br>
+                <label for="message">Birthday:</label>
+
+                <br>
+                <input type="text" name="date" placeholder="Enter your birthday">
+                <br>
+                <br>
+                <button id="birthday" onclick ="myfunction()"  class="bg-success">Submit</button>
+
+            </form>
+        </div>
+
+
+        <div class="card bg-primary text-white">
+            <div class="card-title">
+
+                <h2>Et Consequat Magna</h2>
+            </div>
+        </div>
+        <div class="card-body">
+
+
+            <ul>
+                <li>Orci ut velit</li>
+                <li>Pellentesque cursus justo</li>
+                <li>In felis condimentum cursus</li>
+            </ul>
+            <ul>
+                <li>Proin dignissim lectus enim</li>
+                <li>Eu bibendum mauris euismod in</li>
+                <li>Morbi dictum</li>
+                <li>Ex et malesuada pellentesque</li>
+            </ul>
+
+
+        </div>
+
         <div class="card-footer">
             <p>MIT Copyright (c) 2020 Africa Cultures.Inc</p>
         </div>
