@@ -6,14 +6,14 @@
     <title>Week 2 Project</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src = "js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
-    <div class="container">
+    <div id="container">
         <div class="row">
             <div class="col-md-6">
-                <div class="jumbotron">
+                <div class="jumbotron1">
                     <h1>About</h1>
                     <p>This is an application that prompts you to enter your birthday and depending on your gender
                         outputs your
@@ -35,65 +35,82 @@
                             <li>Click on the submit button below</li>
                             <li>Sit back...</li>
                         </ul>
+                        <img src="img/africa.jpg" width="330" height="250">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="jumbotron">
+        <div class="jumbotron2">
             <form action name="myform">
                 <label for="name">Name:</label>
                 <br>
                 <input type="text" placeholder="Enter your name">
                 <br>
                 <br>
+
                 <label for="email">Email:</label>
                 <br>
-
                 <input type="email" placeholder="Enter your email">
                 <br>
                 <br>
-                <label for="message">Birthday:</label>
 
+                <div class="form-group mb15">
+                    <label class="label">Gender</label>
+                    <div class="rdio rdio-default fs11">
+                        <input type="radio" name="gender" id="male" value="Male">
+                        <label for="male">&nbsp;&nbsp;Male</label>
+                    </div>
+                    <div class="rdio rdio-default fs11">
+                        <input type="radio" name="gender" id="female" value="Female">
+                        <label for="female">&nbsp;&nbsp;Female</label>
+                    </div>
+                </div>
+                <label for="message">Birthday:</label>
                 <br>
-                <input type="text" name="date" placeholder="Enter your birthday">
+                <input type="text" name="date" placeholder="mm/dd/yy">
                 <br>
                 <br>
-                <button id="birthday" onclick ="myfunction()"  class="bg-success">Submit</button>
+                <button id="birthday" onclick="myfunction()" class="bg-success">Submit</button>
 
             </form>
         </div>
+        <p id="message" class="output"></p>
+        <hr>
+        <div class="your-akan-name">
+        </div>
 
+        <div class="footer">
+            <div class="card text-black">
+                <div class="card-title">
 
-        <div class="card bg-primary text-white">
-            <div class="card-title">
-
-                <h2>Et Consequat Magna</h2>
+                    <h2>Et Consequat Magna</h2>
+                </div>
             </div>
-        </div>
-        <div class="card-body">
+            <div class="card-body">
 
 
-            <ul>
-                <li>Orci ut velit</li>
-                <li>Pellentesque cursus justo</li>
-                <li>In felis condimentum cursus</li>
-            </ul>
-            <ul>
-                <li>Proin dignissim lectus enim</li>
-                <li>Eu bibendum mauris euismod in</li>
-                <li>Morbi dictum</li>
-                <li>Ex et malesuada pellentesque</li>
-            </ul>
+                <ul>
+                    <li>Orci ut velit</li>
+                    <li>Pellentesque cursus justo</li>
+                    <li>In felis condimentum cursus</li>
+                </ul>
+                <ul>
+                    <li>Proin dignissim lectus enim</li>
+                    <li>Eu bibendum mauris euismod in</li>
+                    <li>Morbi dictum</li>
+                    <li>Ex et malesuada pellentesque</li>
+                </ul>
 
 
-        </div>
+            </div>
 
-        <div class="card-footer">
-            <p>MIT Copyright (c) 2020 Africa Cultures.Inc</p>
+            <div class="card-footer">
+                <p>MIT Copyright (c) 2020 Africa Cultures.Inc</p>
+            </div>
         </div>
     </div>
 
 </body>
-</div>
+
 
 </html>
