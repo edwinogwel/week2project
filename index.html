@@ -2,7 +2,8 @@
 <html>
 
 <head>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Week 2 Project</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -35,7 +36,7 @@
                             <li>Click on the submit button below</li>
                             <li>Sit back...</li>
                         </ul>
-                        <img src="img/africa.jpg" width="330" height="250">
+                        <img src="img/africa.jpg" width="240" height="250">
                     </div>
                 </div>
             </div>
@@ -50,7 +51,7 @@
 
                 <label for="email">Email:</label>
                 <br>
-                <input type="email" placeholder="Enter your email">
+                <input type="text" placeholder="Enter your email">
                 <br>
                 <br>
 
@@ -67,20 +68,18 @@
                 </div>
                 <label for="message">Birthday:</label>
                 <br>
-                <input type="text" name="date" placeholder="mm/dd/yy">
-                <br>
-                <br>
+                <input type="text" placeholder="mm/dd/yy" id="date" class="form-control" autocomplete="on">
+
                 <button id="birthday" onclick="myfunction()" class="bg-success">Submit</button>
 
             </form>
-        </div>
-        <p id="message" class="output"></p>
-        <hr>
-        <div class="your-akan-name">
-        </div>
 
+        </div>
+        <div id="message">
+
+        </div>
         <div class="footer">
-            <div class="card text-black">
+            <div class="card bg-primary text-white">
                 <div class="card-title">
 
                     <h2>Et Consequat Magna</h2>
