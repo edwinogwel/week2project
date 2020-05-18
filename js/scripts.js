@@ -11,10 +11,10 @@ function myfunction() {
   for (var i = 0; i <= gender.length; i++) {
     if (gender[i].checked) {
       if (gender[i].value === "Male") {
-        document.getElementById('message').innerHTML = "The gender is " + gender[i].value + " and Akan name is " + maleAkanNames[theDay];
+        document.getElementById('message').innerHTML = "You are " + gender[i].value + " and  your Akan name is " + maleAkanNames[theDay];
       }
       else {
-        document.getElementById('message').innerHTML = "The gender is " + gender[i].value + "and Akan name is " + femaleAkanNames[theDay];
+        document.getElementById('message').innerHTML = "You are " + gender[i].value + " and your Akan name is " + femaleAkanNames[theDay];
       }
     }
     else {
